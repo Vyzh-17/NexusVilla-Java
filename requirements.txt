@@ -1,0 +1,66 @@
+# ===========================
+# NexusVilla Java Project Dependencies
+# ===========================
+# This file lists all the JARs required for compiling and running the project.
+# Place all files inside the 'lib/' folder.
+# Tested on Java 17 and Java 21.
+
+# ---------------------------
+# 🗄️ DATABASE CONNECTOR
+# ---------------------------
+mysql-connector-j-8.4.0.jar
+# → Enables JDBC connection between Java and MySQL database.
+
+# ---------------------------
+# 💬 TWILIO (WhatsApp OTP)
+# ---------------------------
+twilio-9.13.0.jar
+# → Twilio official SDK for sending WhatsApp/SMS OTP messages.
+
+# ---------------------------
+# 🌐 TWILIO DEPENDENCIES (HTTP + JSON)
+# ---------------------------
+httpclient-4.5.14.jar
+# → Handles HTTP communication for Twilio REST API.
+httpcore-4.4.16.jar
+# → Core HTTP transport layer used by Apache HttpClient.
+commons-codec-1.15.jar
+# → Provides Base64 and URL encoding/decoding for API calls.
+
+# ---------------------------
+# 🧩 JACKSON (JSON Parsing)
+# ---------------------------
+jackson-core-2.16.1.jar
+jackson-databind-2.16.1.jar
+jackson-annotations-2.16.1.jar
+# → Used internally by Twilio SDK for handling JSON serialization/deserialization.
+
+# ---------------------------
+# 🪶 LOGGING (SLF4J)
+# ---------------------------
+slf4j-api-1.7.36.jar
+slf4j-simple-1.7.36.jar
+# → Handles lightweight console logging for Twilio and database debug messages.
+
+# ---------------------------
+# 🪟 JAVA SWING (UI FRAMEWORK)
+# ---------------------------
+# → No external JAR needed; Swing is built into the Java SDK.
+
+# ---------------------------
+# ⚙️ COMPILATION INSTRUCTION
+# ---------------------------
+# Run the following command from your project root:
+#   javac -cp ".;lib/*" -d out src\db\*.java src\services\*.java src\gui\*.java src\main\*.java
+#
+# Then run your app:
+#   java -cp ".;lib/*;out" main.MainLauncher
+#
+# If you’re on macOS/Linux, replace ';' with ':' in classpath separators.
+
+# ---------------------------
+# ✅ NOTES
+# ---------------------------
+# All libraries are open-source or free to use for educational purposes.
+# Compatible with MySQL 8.x and Java 11+.
+# Twilio features require a valid ACCOUNT_SID, AUTH_TOKEN, and WhatsApp sandbox setup.

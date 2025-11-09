@@ -1,0 +1,26 @@
+# ===============================
+# NexusVilla Java Project Git Ignore
+# ===============================
+
+# Compiled Java classes
+/out/
+*.class
+
+# IDE specific
+/.idea/
+/.vscode/
+/*.iml
+
+# Libraries and dependencies
+/lib/
+
+# Logs and temp
+*.log
+*.tmp
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Sensitive configuration
+config.properties
