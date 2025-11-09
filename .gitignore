@@ -25,4 +25,4 @@ Thumbs.db
 # Sensitive configuration
 config.properties
 
-uploads
+uploads/
